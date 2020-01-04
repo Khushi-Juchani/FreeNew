@@ -2,6 +2,8 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ADPDataAccessProj;
+using ADPRepository;
 
 namespace ADPPlannerTest
 {
@@ -59,11 +61,15 @@ namespace ADPPlannerTest
         #endregion
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void TestMethod1()
         {
-            //
-            // TODO: Add test logic here
-            //
+            ADP_DB_New1Entities context = new ADP_DB_New1Entities();
+            ClientRepository clientRepository = new ClientRepository(context);
+            clientRepository.Insert(null);
+       
         }
+
+
     }
 }
