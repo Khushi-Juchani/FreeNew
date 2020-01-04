@@ -71,21 +71,6 @@
     <Compile Include="AdminLoginFrm.Designer.cs">
       <DependentUpon>AdminLoginFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADP_Db_NewDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADP_Db_NewDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ADP_Db_NewDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADP_Db_NewDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ADP_Db_NewDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADP_Db_NewDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ClientFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,39 +144,6 @@
     <EmbeddedResource Include="RegisterFrm.resx">
       <DependentUpon>RegisterFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ADP_Db_NewDataSet.xsc">
-      <DependentUpon>ADP_Db_NewDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ADP_Db_NewDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ADP_Db_NewDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ADP_Db_NewDataSet.xss">
-      <DependentUpon>ADP_Db_NewDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ADP_Db_NewDataSet1.xsc">
-      <DependentUpon>ADP_Db_NewDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ADP_Db_NewDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ADP_Db_NewDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ADP_Db_NewDataSet1.xss">
-      <DependentUpon>ADP_Db_NewDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ADP_Db_NewDataSet2.xsc">
-      <DependentUpon>ADP_Db_NewDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="ADP_Db_NewDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ADP_Db_NewDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ADP_Db_NewDataSet2.xss">
-      <DependentUpon>ADP_Db_NewDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ADPDataAccess.ClientEvent.datasource" />
     <None Include="Properties\DataSources\ADPDataAccess.Event.datasource" />

@@ -34,7 +34,7 @@ namespace AwayDayPlanner
 
             if (islogin > 0)
             {
-                AdminFrm adminFrm = new AdminFrm(AdminUsername);
+                AdminFrm adminFrm = new AdminFrm();
                 adminFrm.Tag = this;
                 adminFrm.Show(this);
                 Hide();

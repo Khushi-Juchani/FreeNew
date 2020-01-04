@@ -123,11 +123,11 @@
       <LastGenOutput>ADPModel.cs</LastGenOutput>
     </Content>
     <Content Include="ADP_DB_New1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ADP_DB_New1_log.ldf">
       <DependentUpon>ADP_DB_New1.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

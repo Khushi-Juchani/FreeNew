@@ -40,5 +40,61 @@ namespace AwayDayPlanner.Model
             return availabilities;
             
         }
+        public bool DeleteEvent(int EventID)
+        {
+            try
+            {
+                eventRepository.Delete(EventID);
+                eventRepository.Save();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
+        public bool UpdateEvent(int event_id, string event_name, string event_details, int event_cost, string event_number, string event_type)
+        {
+            try
+            {
+                Event evts = new Event();
+                evts.EventID = event_id;
+                evts.EventName = event_name;
+                evts.EventDetails = event_details;
+                evts.Cost = event_cost;
+                evts.EventNumber = event_number;
+                evts.EventType = event_type;
+                eventRepository.Update(evts);
+                eventRepository.Save();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool AddEvent(string event_name, string event_details, int event_cost)
+        {
+            try
+            {
+
+                Event evts = new Event();
+                evts.EventName = event_name;
+                evts.EventDetails = event_details;
+                evts.Cost = event_cost;
+                evts.EventNumber = "10";
+                evts.EventType = "Package";
+                eventRepository.Insert(evts);
+                eventRepository.Save();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

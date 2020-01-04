@@ -15,7 +15,7 @@ namespace ADPRepository
         void Insert(Event adpEvent);
         Event getEventByName(string eventName);
         void Update(Event adpEvent);
-        void Delete(string adpEventNumber);
+        void Delete(int eventID);
         void Save();
     }
 }

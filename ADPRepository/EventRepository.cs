@@ -26,9 +26,9 @@ namespace ADPRepository
         {
             _context = context;
         }
-        public void Delete(string adpEventNumber)
+        public void Delete(int eventID)
         {
-            Event curr_event = _context.Events.Where(x => x.EventNumber == adpEventNumber).FirstOrDefault();
+            Event curr_event = _context.Events.Where(x => x.EventID == eventID).FirstOrDefault();
             _context.Events.Remove(curr_event);
         }
 
