@@ -60,6 +60,7 @@
     <Compile Include="ClientTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterTest.cs" />
+    <Compile Include="EventTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
